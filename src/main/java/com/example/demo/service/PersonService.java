@@ -16,7 +16,7 @@ import java.util.UUID;
 @RequiredArgsConstructor(onConstructor = @__({@Autowired}))
 public class PersonService {
     @NonNull
-    @Qualifier("mySql")
+    @Qualifier("postgres")
     private final PersonDao personDao;
 
     public int addPerson(Person person) {
