@@ -3,7 +3,6 @@ package com.example.demo.api;
 import com.example.demo.model.Person;
 import com.example.demo.service.PersonService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
