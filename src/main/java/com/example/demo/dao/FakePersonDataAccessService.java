@@ -47,12 +47,12 @@ public class FakePersonDataAccessService implements PersonDao {
                 .map(person -> {
                     int index = DB.indexOf(person);
                     if (index >= 0) {
-                        DB.set(index, update);
+                        DB.set(index, new Person(id, update.getName()));
                         return 1;
                     } else {
                         return 0;
                     }
                 })
-                .orElse(0 );
+                .orElse(0);
     }
 }

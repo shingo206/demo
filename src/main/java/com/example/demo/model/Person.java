@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 @Data
@@ -12,7 +13,7 @@ import java.util.UUID;
 public class Person {
     @JsonProperty
     private final UUID id;
-    @NonNull
+    @NotBlank
     @JsonProperty
     private final String name;
 }
